@@ -19,6 +19,8 @@ test {
 dependencies {
 	testImplementation 'org.json:json:20210307'
 	implementation 'org.json:json:20210307'
+	compile 'com.google.code.gson:gson:2.8.2'
+
 
 }
 

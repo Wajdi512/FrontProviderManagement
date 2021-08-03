@@ -5,27 +5,26 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="446.0" prefWidth="520.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="gui.CreateAccountController">
+<AnchorPane prefHeight="446.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CreateAccountController">
    <children>
       <Label layoutX="29.0" layoutY="31.0" text="S'enregistrer" />
       <Label layoutX="39.0" layoutY="74.0" text="Nom:" />
-      <TextField layoutX="39.0" layoutY="98.0" />
-      <TextField layoutX="39.0" layoutY="211.0" />
-      <TextField layoutX="305.0" layoutY="211.0" prefHeight="25.0" prefWidth="191.0" />
-      <TextField layoutX="40.0" layoutY="265.0" />
-      <TextField layoutX="39.0" layoutY="158.0" />
-      <TextField layoutX="305.0" layoutY="98.0" prefHeight="25.0" prefWidth="191.0" />
+      <TextField fx:id="txtNom" layoutX="39.0" layoutY="98.0" />
+      <TextField fx:id="txtQstSec" layoutX="40.0" layoutY="265.0" />
+      <TextField fx:id="txtIdentifiant" layoutX="39.0" layoutY="158.0" />
+      <TextField fx:id="txtAdresse" layoutX="305.0" layoutY="98.0" prefHeight="25.0" prefWidth="191.0" />
       <Label layoutX="305.0" layoutY="74.0" text="Adresse:" />
       <Label layoutX="34.0" layoutY="138.0" text="Identifiant:" />
       <Label layoutX="313.0" layoutY="138.0" text="Adresse  mail:" />
-      <TextField layoutX="305.0" layoutY="158.0" prefHeight="25.0" prefWidth="191.0" />
+      <TextField fx:id="txtEmail" layoutX="305.0" layoutY="158.0" prefHeight="25.0" prefWidth="191.0" />
       <Label layoutX="39.0" layoutY="194.0" text="Mot de passe:" />
       <Label layoutX="305.0" layoutY="194.0" text="Confirmer mot de passe" />
-      <TextField layoutX="305.0" layoutY="265.0" prefHeight="25.0" prefWidth="191.0" />
+      <TextField fx:id="txtRepSec" layoutX="305.0" layoutY="265.0" prefHeight="25.0" prefWidth="191.0" />
       <Label layoutX="39.0" layoutY="248.0" text="Question secréte:" />
       <Label layoutX="309.0" layoutY="248.0" text="Réponse:" />
-      <Button layoutX="361.0" layoutY="314.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="141.0" text="Créer compte" />
+      <Button layoutX="363.0" layoutY="317.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="41.0" prefWidth="141.0" text="Créer compte" />
       <Button layoutX="450.0" layoutY="386.0" mnemonicParsing="false" onAction="#goToLogin" text="Retour" />
+      <PasswordField fx:id="txtPasssword1" layoutX="40.0" layoutY="211.0" />
+      <PasswordField fx:id="txtPasssword2" layoutX="305.0" layoutY="211.0" prefHeight="25.0" prefWidth="191.0" />
    </children>
 </AnchorPane>

@@ -11,5 +11,10 @@ public class DashboardController {
 	public void setMainApp(Main mainApp) {
 		this.mainApp = mainApp;
 	}
+	
+	public void seDeconnecter() {
+		mainApp.mainWindow();
+	}
+
 
 }

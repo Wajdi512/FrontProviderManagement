@@ -2,6 +2,8 @@ package gui;
 
 import java.io.IOException;
 
+import com.google.gson.Gson;
+
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -9,7 +11,11 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+	
+	public static String backURL = "http://localhost:9090";
 	Stage stage;
+	
+	public Gson gson = new Gson();
 
 	public static void main(String[] args) {
 		launch(args);

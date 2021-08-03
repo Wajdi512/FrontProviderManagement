@@ -5,8 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane prefHeight="488.0" prefWidth="698.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="gui.DashboardController">
+<AnchorPane prefHeight="488.0" prefWidth="698.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.DashboardController">
    <children>
       <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="698.0">
         <menus>
@@ -24,7 +23,7 @@
                   <MenuItem mnemonicParsing="false" text="Etablir nouveau contrat" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Se deconnecter">
+          <Menu mnemonicParsing="false" onAction="#seDeconnecter" text="Se deconnecter">
             <items>
               <MenuItem mnemonicParsing="false" text="About" />
             </items>
